@@ -76,10 +76,10 @@ BANCO DE DADOS biblioteca:
 ---
 📘 Objetivo Acadêmico
 
-Este projeto foi desenvolvido como atividade prática da disciplina Modelagem e Desenvolvimento de Banco de Dados, visando proporcionar experiência na criação de bancos relacionais completos, com tabelas bem estruturadas e regras de negócio implementadas.
----
-🧑‍💻 Autora
+<h3> Este projeto foi desenvolvido como atividade prática da disciplina Modelagem e Desenvolvimento de Banco de Dados, visando proporcionar experiência na criação de bancos relacionais completos, com tabelas bem estruturadas e regras de negócio implementadas. </h3>
+----
 
+🧑‍💻 Autora
 Jaqueline da Silva Gomes <br>
 Curso: Análise e Desenvolvimento de Sistemas <br>
 Universidade Cruzeiro do Sul  <br>
