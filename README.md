@@ -1,92 +1,88 @@
 📚 Sistema de Biblioteca Inteligente
-Autora: Jaqueline da Silva Gomes
-Curso: Análise e Desenvolvimento de Sistemas – Cruzeiro do Sul
+
+Jaqueline da Silva Gomes <br>
+Curso: Análise e Desenvolvimento de Sistemas <br>
+Universidade Cruzeiro do Sul
+----
 📌 Sobre o Projeto
 
-O Sistema de Biblioteca Inteligente é um modelo de banco de dados desenvolvido para gerenciar livros, usuários, funcionários, empréstimos, multas e reservas dentro de uma biblioteca.
+O Sistema de Biblioteca Inteligente é um modelo de banco de dados relacional projetado para gerenciar livros, usuários, funcionários, empréstimos, multas e reservas de uma biblioteca.
 
-O objetivo é fornecer uma estrutura robusta e organizada para apoiar o desenvolvimento de sistemas de controle de acervo e circulação, garantindo integridade dos dados e regras de relacionamento bem definidas.
+O objetivo do projeto é oferecer uma estrutura robusta e bem organizada para apoiar sistemas de controle de acervo e circulação, assegurando integridade dos dados, relacionamentos consistentes e padronização das informações.
 
-Este repositório contém o script SQL completo para criação das tabelas e relações no MySQL.
-
+Este repositório contém o script SQL completo para criação das tabelas, relacionamentos e regras de integridade no MySQL.
+----
 🗂️ Estrutura do Banco de Dados
 
-O banco é composto pelas seguintes tabelas principais:
+O banco de dados é composto pelas seguintes entidades principais:
 
-1. Livros
+1 → Livros
 
-Registra informações sobre o acervo da biblioteca.
-Campos principais: título, autor, ano de publicação, gênero, editora e status.
+Registra todas as informações do acervo.
+Campos principais: título, autor, ano de publicação, gênero, editora, status.
 
-2. Usuários
+2 → Usuários
+Armazena dados dos leitores cadastrados.
 
-Armazena os dados dos leitores cadastrados na biblioteca.
+3 → Funcionários
+Contém informações sobre os colaboradores responsáveis pelo atendimento.
 
-3. Funcionários
+4 → Empréstimos
+Tabela que relaciona livros, usuários e funcionários no processo de empréstimo.
 
-Guarda informações sobre funcionários responsáveis pelos atendimentos.
+5 → Multas
+Controla multas aplicadas por atraso na devolução.
 
-4. Empréstimos
-
-Relação entre livros, usuários e funcionários durante um empréstimo.
-
-5. Multas
-
-Controla multas associadas a atrasos na devolução.
-
-6. Reservas
-
-Registra solicitações de reserva de livros pelos usuários.
-
+6 → Reservas
+Registra solicitações de reserva feitas pelos usuários.
+---
 🔗 Relacionamentos
+Empréstimos se relacionam com:
 
-Emprestimos se relacionam com:
-
-Livros
-
+Livros,
+Usuários,
+Funcionários,
+Multas,
+Empréstimos,
+Reservas,
+Livros,
 Usuários
 
-Funcionários
-
-Multas dependem de Emprestimos
-
-Reservas se relacionam com:
-
-Livros
-
-Usuários
-
-Todos os relacionamentos foram criados com chaves estrangeiras e regras de integridade referencial.
-
+Todos os relacionamentos foram implementados com chaves estrangeiras e regras de integridade referencial, garantindo consistência e evitando dados órfãos.
+---
 🛠️ Tecnologias Utilizadas
 
 MySQL 5.7+ ou MariaDB
 
-Workbench, DBeaver ou terminal MySQL para execução do script
-
+Clientes SQL: MySQL Workbench, DBeaver ou terminal MySQL
+---
 ▶️ Como Executar o Projeto
 
-Instale o MySQL na sua máquina.
+Instale o MySQL em sua máquina.
 
-Abra o MySQL Workbench ou seu cliente preferido.
+Abra o MySQL Workbench (ou outro cliente de sua preferência).
 
 Copie o arquivo SQL disponível neste repositório.
 
-Execute o script completo para criar o banco:
-
+Execute o script para criar o banco de dados:
 CREATE DATABASE biblioteca;
 USE biblioteca;
 
 -- (demais comandos de criação das tabelas)
-![print](https://github.com/user-attachments/assets/4941d6c0-7475-4596-8ac5-f8fd3409236a)
+---
+BANCO DE DADOS biblioteca:
 
+
+![BANCO DE DADOS biblioteca](https://github.com/user-attachments/assets/b832760e-3c9e-40b5-babc-9aa15ff56377)
+
+---
 📘 Objetivo Acadêmico
 
-Este projeto foi desenvolvido como atividade prática na disciplina de Modelagem e Desenvolvimento de Banco de Dados, proporcionando experiência na construção de modelos relacionais completos e funcionais.
-
+Este projeto foi desenvolvido como atividade prática da disciplina Modelagem e Desenvolvimento de Banco de Dados, visando proporcionar experiência na criação de bancos relacionais completos, com tabelas bem estruturadas e regras de negócio implementadas.
+---
 🧑‍💻 Autora
 
-Jaqueline da Silva Gomes
-Curso de Análise e Desenvolvimento de Sistemas
+Jaqueline da Silva Gomes <br>
+Curso: Análise e Desenvolvimento de Sistemas <br>
 Universidade Cruzeiro do Sul
 
