@@ -2,7 +2,7 @@
 
 Jaqueline da Silva Gomes <br>
 Curso: Análise e Desenvolvimento de Sistemas <br>
-Universidade Cruzeiro do Sul
+Universidade Cruzeiro do Sul  <br>
 Meu Repositório: https://github.com/jaqueline-silvajf/Atividade-04-Novembro.git
 ----
 📌 Sobre o Projeto
